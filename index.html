@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="loginPage">
+        <center>
+            <h2>Login Page</h2>
+            <input type="text" id="username" placeholder="Enter Username"><br><br>
+            <input type="password" id="password" placeholder="Enter Password">
+            <br><br>
+            <button onclick="login()">Login</button>
+        </center>
+    </div>
+
+    
+    <div id="portfolioPage" style="display:none;">
+
+        <header>
+            <h1>My Portfolio Website</h1>
+
+            <nav>
+                <button onclick="showSection('About Me')">About</button>
+                <button onclick="showSection('Skills')">Skills</button>
+                <button onclick="showSection('Projects')">Projects</button>
+                <button onclick="showSection('Contact')">Contact</button>
+                <button onclick="showSection('College')">College</button>
+            </nav>
+        </header>
+
+        <section id="About Me" class="section">
+            <h2>About Me:</h2>
+            <p>Hello!! My Self Arul, I am pursuing B.Tech Information Technology in Adithya Institute of Technology, Coimbatore.</p>
+            <img src="Profile Picture.jpg" alt="Profile Picture" width="250" height="300">
+        </section>
+
+        <section id="Skills" class="section">
+            <h2>Skills:</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+        </section>
+
+        <section id="Projects" class="section">
+            <h2>Projects:</h2>
+            <p>Portfolio Website Project in full stack development.</p>
+        </section>
+
+        <section id="Contact" class="section">
+            <h2>Contact:</h2>
+            <p>Email: arulalex257@gmail.com</p>
+            <p>Phone: 8807527293</p>
+        </section>
+
+        <section id="College" class="section">
+            <h2>College:</h2>
+            <p>Adithya Institute of Technology, Coimbatore.</p>
+            <p><a href="https://adithyatech.edu.in/">Visit my college!!!</a></p>
+        </section>
+
+        <br>
+        <center>
+        <button onclick="logout()">Logout</button>
+        </center>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
