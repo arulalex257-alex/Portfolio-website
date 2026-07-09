@@ -1,6 +1,6 @@
 function login() {
 
-    if (username.value != "" && password.value != "") {
+    if (username.value == "alex" && password.value == "2007") {
 
         loginPage.style.display = "none";
         portfolioPage.style.display = "block";
