@@ -38,7 +38,33 @@ button {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+/* Laptop/Desktop */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
 
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
 .section {
     display: none;
     padding: 20px;
